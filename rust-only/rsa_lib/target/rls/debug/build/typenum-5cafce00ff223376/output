@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/arctumn/ano20202021/Projeto/Projeto-WASM/rust-only/rsa_lib/target/rls/debug/build/typenum-5cafce00ff223376/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/arctumn/ano20202021/Projeto/Projeto-WASM/rust-only/rsa_lib/target/rls/debug/build/typenum-5cafce00ff223376/out/op.rs
