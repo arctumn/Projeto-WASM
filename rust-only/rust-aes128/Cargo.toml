@@ -4,6 +4,17 @@ version = "0.1.0"
 authors = ["arctumn <arctumn@github.com>"]
 edition = "2018"
 
+[profile.dev]
+opt-level = 3
+debug = true
+debug-assertions = true
+overflow-checks = true
+lto = false
+panic = 'unwind'
+incremental = true
+codegen-units = 1
+rpath = false
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

@@ -8,7 +8,7 @@ void run(){
     struct AES_ctx ctx;
     uint8_t key[] = "aaaaaaaaaaaaaaaa";
     uint8_t iv[]  = "bbbbbbbbbbbbbbbb";
-    uint8_t str[] = {"This is a very long text message to test heavy compression and decompression!\nThis is a very long text message to test heavy compression and decompression!\nThis is a very long text message to test heavy compression and decompression!\nThis is a very long text message to test heavy compression and decompression!\n"};
+    uint8_t str[] = {"This is a very long text message to test heavy compression and decompression!\nThis is a very long text message to test heavy compression and decompression!\nThis is a very long text message to test heavy compression and decompression!\nThis is a very long text message to test heavy compression and decom\n"};
     for(int g = 0; g < 10000; g++){
         //encriptar
         AES_init_ctx_iv(&ctx, key, iv);

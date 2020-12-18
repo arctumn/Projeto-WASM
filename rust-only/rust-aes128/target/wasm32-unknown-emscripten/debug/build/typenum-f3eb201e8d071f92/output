@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/arctumn/ano20202021/Projeto/Projeto-WASM/rust-only/rust-aes128/target/wasm32-unknown-emscripten/debug/build/typenum-f3eb201e8d071f92/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/arctumn/ano20202021/Projeto/Projeto-WASM/rust-only/rust-aes128/target/wasm32-unknown-emscripten/debug/build/typenum-f3eb201e8d071f92/out/op.rs
