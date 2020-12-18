@@ -3,9 +3,9 @@
 
     function fctName(fctId) {
         const fct = Wasabi.module.info.functions[fctId];
-        if (fct.export[0] !== undefined) return "wasm_outer_export_"+ fct.export[0];
-        if (fct.import !== null) return "wasm_outer_import_"+ fct.import;
-        return "wasm_inner_id_" + fctId;
+        if (fct.export[0] !== undefined) return fct.export[0];
+        if (fct.import !== null) return  fct.import;
+        return fctId;
     }
 
     function parseType(serializedType){
@@ -43,17 +43,22 @@
         return parsedString
         }
 
-        function argType(fctId){
-            const fct = Wasabi.module.info.functions[fctId];
-            return parseType(fct.type)
-        }
+    function argType(fctId){
+        const fct = Wasabi.module.info.functions[fctId];
+        return parseType(fct.type)
+    }
     Wasabi.analysis = {
-        call_pre(location, targetFunc, args, indirectTableIdx) {
+        call_pre(location, targetFunc, _, _) {
             const caller = fctName(location.func);
             const callee = fctName(targetFunc);
             const argcallee = argType(targetFunc);
-                listOfElements.push("The function "+ caller + " is using the function " + callee + "("+argcallee+")");
-          
+            listOfElements.push(
+                "The function "
+                + caller 
+                + " is using the function " 
+                + callee 
+                + "("+argcallee+")"
+            );
         },
     };
 
