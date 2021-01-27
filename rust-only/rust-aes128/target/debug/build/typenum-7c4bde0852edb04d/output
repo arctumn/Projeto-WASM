@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/arctumn/ano20202021/Projeto/Projeto-WASM/rust-only/rust-aes128/target/debug/build/typenum-7c4bde0852edb04d/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/home/arctumn/ano20202021/Projeto/Projeto-WASM/rust-only/rust-aes128/target/debug/build/typenum-7c4bde0852edb04d/out/op.rs
