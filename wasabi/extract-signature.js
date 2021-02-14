@@ -48,7 +48,7 @@
         return parseType(fct.type)
     }
     Wasabi.analysis = {
-        call_pre(location, targetFunc, _, _) {
+        call_pre(location, targetFunc, _notused, _notused2) {
             const caller = fctName(location.func);
             const callee = fctName(targetFunc);
             const argcallee = argType(targetFunc);
